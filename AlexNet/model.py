@@ -30,7 +30,6 @@ class AlexNet(nn.Module):
         x = self.ReLU(self.c6(x))
         x = self.ReLU(self.c7(x))
         x = self.s8(x)
-
         x = self.flatten(x)
         x = self.ReLU(self.f1(x))
         x = f.dropout(x, 0.5)
