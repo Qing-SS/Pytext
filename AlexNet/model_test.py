@@ -82,3 +82,4 @@ if __name__ == "__main__":
     save_path = "forecast.xlsx"
     df.to_excel(save_path, index=False)
     print(f"预测结果已保存到 {save_path}")
+
