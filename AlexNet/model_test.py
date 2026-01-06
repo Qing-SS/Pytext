@@ -20,7 +20,6 @@ def test_data_process():
 
 
 # noinspection PyShadowingNamas
-# noinspection PyShadowingNames
 def test_model_process(model, test_dataloader):
     device = "cuda" if torch.cuda.is_available() else 'cpu'
     model = model.to(device)
